@@ -23,5 +23,10 @@
 
 ![alt text](https://github.com/Nurlan199206/okd4.12/blob/main/okd-2.png "")
 
+![alt text](https://github.com/Nurlan199206/okd4.12/blob/main/task%20mgr.png "Logo Title Text 1")
+
+
+
+
 
 
