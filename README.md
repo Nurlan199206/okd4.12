@@ -4,7 +4,9 @@
 
 
 ```openshift-install create manifests```
+
 ```openshift-install create ignition-configs```
+
 ```openshift-install --dir=. wait-for bootstrap-complete --log-level=debug```
 
 
@@ -17,3 +19,9 @@
 
 
 ![alt text](https://github.com/Nurlan199206/okd4.12/blob/main/okd-1.png "OKD 4.12")
+
+
+![alt text](https://github.com/Nurlan199206/okd4.12/blob/main/okd-2.png "")
+
+
+
