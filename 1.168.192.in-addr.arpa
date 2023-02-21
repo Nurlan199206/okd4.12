@@ -1,0 +1,24 @@
+$TTL    604800
+@       IN      SOA     ns1.nurlan.kz.  root.nurlan.kz. (
+                1               ;Serial
+                604800          ;Refresh
+                86400           ;Retry
+                2419200         ;Expire
+                604800          ;Negative Cache TTL
+)
+
+; name servers - NS records
+        IN      NS      ns1.nurlan.kz.
+
+; name servers - PTR records
+130     IN      PTR     ns1.nurlan.kz.
+
+; OpenShift Container Platform Cluster - PTR records
+129     IN      PTR     okd-test.bootstrap.nurlan.kz.
+131     IN      PTR     okd-test.master01.nurlan.kz.
+132     IN      PTR     okd-test.master02.nurlan.kz.
+133     IN      PTR     okd-test.master03.nurlan.kz.
+134     IN      PTR     okd-test.node01.nurlan.kz.
+135     IN      PTR     okd-test.node02.nurlan.kz.
+130     IN      PTR     api.okd-test.nurlan.kz.
+130     IN      PTR     api-int.okd-test.nurlan.kz.
