@@ -3,11 +3,16 @@
 ```OKD version: 4.12.0-0.okd-2023-01-21-055900```
 
 
-| Type          | Resources     | asd  |
-| ------------- |:-------------:| -----:|
-| master,worker | 8vCPU,8GB RAM, 40 DISK | $1600 |
-| master,worker | 8vCPU,8GB RAM, 40 DISK |   $12 |
-| master,worker | 8vCPU,8GB RAM, 40 DISK |    $1 |
+```openshift-install create manifests```
+```openshift-install create ignition-configs```
+```openshift-install --dir=. wait-for bootstrap-complete --log-level=debug```
+
+
+| Type          | Resources     |
+| ------------- |:-------------:|
+| master,worker | 8vCPU,8GB RAM, 40 DISK |
+| master,worker | 8vCPU,8GB RAM, 40 DISK |
+| master,worker | 8vCPU,8GB RAM, 40 DISK |
 
 
 
