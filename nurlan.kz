@@ -1,0 +1,31 @@
+$TTL 604800
+@       IN      SOA     ns1.nurlan.kz. root.nurlan.kz. (
+                       1        ;Serial
+                  604800        ;Refresh
+                   86400        ;Retry
+                 2419200        ;Expiry
+                  604800        ;Negative Cache TTL
+)
+
+ IN      NS      ns1.nurlan.kz.
+
+ns1.nurlan.kz.          IN      A       192.168.1.130
+smtp.nurlan.kz.         IN      A       192.168.1.130
+
+
+helper.nurlan.kz.               IN      A       192.168.1.130
+helper.okd-test.nurlan.kz.      IN      A       192.168.1.130
+
+api.okd-test.nurlan.kz.         IN      A       192.168.1.130
+api-int.okd-test.nurlan.kz.     IN      A       192.168.1.130
+
+*.apps.okd-test.nurlan.kz.      IN      A       192.168.1.130
+
+okd-test.bootstrap.nurlan.kz.   IN      A       192.168.1.129
+
+okd-test.master01.nurlan.kz.    IN      A       192.168.1.131
+okd-test.master02.nurlan.kz.    IN      A       192.168.1.132
+okd-test.master03.nurlan.kz.    IN      A       192.168.1.133
+
+okd-test.node01.nurlan.kz.      IN      A       192.168.1.134
+okd-test.node02.nurlan.kz.      IN      A       192.168.1.135
