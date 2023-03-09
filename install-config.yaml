@@ -1,0 +1,28 @@
+apiVersion: v1
+baseDomain: nurlan.kz
+metadata:
+  name: okd-test
+
+compute:
+- hyperthreading: Enabled
+  name: worker
+  replicas: 2
+
+controlPlane:
+  hyperthreading: Enabled
+  name: master
+  replicas: 3
+
+networking:
+  clusterNetwork:
+  - cidr: 100.64.0.0/14
+    hostPrefix: 23
+  networkType: OVNKubernetes
+  serviceNetwork:
+  - 172.30.0.0/16
+
+platform:
+  none: {}
+fips: false
+pullSecret: '{"auths":{"fake":{"auth": "bar"}}}'
+sshKey: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDXF/R+I2Hn9YtjkRu/xtnSWyPI/PKCX3dMtvwHLSzEDNK6nalDOINVGccb4QYW9Fe7pbVsoANcXeaOQ96GucbRg4iodIP6Xv8vlTldItR5Y3rZ0Ipstd0SrzVJkkQTGiqdW1VqnIkZjuXBZQ6hqBNTg7PyJhe2SusIY+cYpu/CFQV7rvrhqgV4auB6alxdzTtk4D1ltDf4jdq8DTRX0lblLBcyMshb+TlLnVHTrrI2dz3VJT5etGArAekWhss/dbGRKf7nL/kkdDsuV3yFMBEuxyMxtvXdKfuLvFIU6XpzEARo4r7rBgWHjwFs6vDCrCppx58/UliOPuMmbaBv5EP7 root@lb-okd'
