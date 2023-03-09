@@ -9,6 +9,7 @@
 
 ```openshift-install --dir=. wait-for bootstrap-complete --log-level=debug```
 
+В live-режиме не забываем скопировать настройки сети!
 
 ----------------------------------------------------------------------------------------------------------
 
@@ -22,6 +23,10 @@
 ```nmcli con mod "Wired connection 1" ipv4.method manual - change from DHCP to static```
 
 ```nmcli conn show```
+
+```В live-режиме не забываем скопировать настройки сети!```
+
+```sudo coreos-installer install /dev/nvme0n1 --ignition-url http://192.168.1.130:8080/bootstrap.ign --copy-network --insecure-ignition```
 
 
 | Type          | Resources     |
