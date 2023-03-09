@@ -9,6 +9,10 @@
 
 ```openshift-install --dir=. wait-for bootstrap-complete --log-level=debug```
 
+
+----------------------------------------------------------------------------------------------------------
+
+
 ```nmcli con mod "Wired connection 1" ipv4.addresses 10.160.1.x/24```
 
 ```nmcli con mod "Wired connection 1" ipv4.gateway 10.160.1.1```
